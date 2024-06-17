@@ -5,7 +5,11 @@
 - Backend: http://localhost:8000/api/dollar_values
 - frontend: http://localhost:3000
 
-Comando artisan = php artisan app:charge-data
+Comando artisan:
+```shell
+ php artisan app:charge-data
+```
+
 ## Instalación
 ### Opción recomendada
 
@@ -25,7 +29,7 @@ Ahora ejecute
 cd ./backend
 docker-compose exec laravel.test composer require fakerphp/faker
 ```
-Debe responder a las consultas que se le realizaran en la  terminal. Para esto use enter 2 veces.
+Debe responder a las consultas que se le realizaran en la  terminal. Para esto use enter 2 veces. Posteriormente realice los siguientes comandos.
 ```bash
 docker-compose exec laravel.test php artisan optimize:clear
 docker-compose exec laravel.test composer dump-autoload
@@ -34,6 +38,11 @@ docker-compose exec laravel.test php artisan db:seed
 docker-compose exec laravel.test php artisan app:charge-data
 cd ..
 ```
+
+'Listo!
+'Listo!
+'Listo!
+
 
 Es posible que el proyecto no se levante correctamente en algunas distribuciones linux. Esto es debido al nucleo de seguridad, el cual tiene algunos conflictos con docker. Si es el caso ejecute:
 ```bash
