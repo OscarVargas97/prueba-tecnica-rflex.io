@@ -2,8 +2,10 @@
 
 ## Enlaces:
 Backend: http://localhost:8000
+
 frontend: http://localhost:3000
 
+Comando artisan = php artisan app:charge-data
 ## Instalación
 
 
