@@ -23,6 +23,7 @@ Una vez termine este comando, ejecute
 Ahora ejecute
 ```bash
 cd ./backend
+docker-compose exec laravel.test composer require fakerphp/faker
 docker-compose exec laravel.test php artisan optimize:clear
 docker-compose exec laravel.test composer dump-autoload
 docker-compose exec laravel.test php artisan migrate
