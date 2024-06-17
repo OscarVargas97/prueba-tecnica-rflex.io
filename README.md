@@ -21,6 +21,8 @@ Una vez termine este comando, ejecute
 Ahora ejecute
 ```bash
 cd ./backend
+docker-compose exec laravel.test php artisan optimize:clear
+docker-compose exec laravel.test composer dump-autoload
 docker-compose exec laravel.test php artisan migrate
 docker-compose exec laravel.test php artisan db:seed
 docker-compose exec laravel.test php artisan app:charge-data
