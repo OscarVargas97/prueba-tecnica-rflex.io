@@ -1,6 +1,11 @@
 # Prueba tecnica rFlex.io
 
+## Enlaces:
+Backend: http://localhost:8000
+frontend: http://localhost:3000
+
 ## Instalación
+
 
 Instrucciones paso a paso sobre cómo instalar el proyecto. Por ejemplo:
 
@@ -8,7 +13,23 @@ Instrucciones paso a paso sobre cómo instalar el proyecto. Por ejemplo:
 git clone https://github.com/OscarVargas97/prueba-tecnica-rflex.io.git
 cd prueba-tecnica-rflex
 ./install.sh
+```
+Una vez termine este comando, ejecute
+```bash
 ./run.sh
+```
+Ahora ejecute
+```bash
+cd ./backend
+docker-compose exec laravel.test php artisan migrate
+docker-compose exec laravel.test php artisan db:seed
+docker-compose exec laravel.test php artisan app:charge-data
+cd ..
+```
+
+Es posible que el proyecto no se levante correctamente en algunas distribuciones linux. Esto es debido al nucleo de seguridad, el cual tiene algunos conflictos con docker. Si es el caso ejecute:
+```bash
+sudo setenforce 0
 ```
 
 Los comandos indicados anteriormente instalaran los contenedores del proyecto, realizaran las migraciones, los seed, ejecutaran el comando para obtener los datos desde la api solicitada y finalmente los levantara.
