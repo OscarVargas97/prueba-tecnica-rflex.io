@@ -2,7 +2,7 @@
 
 ## Enlaces:
 
-- Backend: http://localhost:8000/api/dollar_values
+- Backend: http://localhost:8000/api/dollar-values
 - frontend: http://localhost:3000
 
 Comando artisan:
@@ -42,7 +42,8 @@ cd ..
 'Listo!
 'Listo!
 'Listo!
-
+#### Abrimos el navegador
+http://localhost:3000
 
 Es posible que el proyecto no se levante correctamente en algunas distribuciones linux. Esto es debido al nucleo de seguridad, el cual tiene algunos conflictos con docker. Si es el caso ejecute:
 ```bash
