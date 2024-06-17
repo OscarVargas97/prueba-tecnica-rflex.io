@@ -1,13 +1,13 @@
 # Prueba tecnica rFlex.io
 
 ## Enlaces:
-Backend: http://localhost:8000
 
-frontend: http://localhost:3000
+- Backend: http://localhost:8000/api/dollar_values
+- frontend: http://localhost:3000
 
 Comando artisan = php artisan app:charge-data
 ## Instalación
-
+### Opción recomendada
 
 Ejecute los siguientes comandos:
 
@@ -24,6 +24,9 @@ Ahora ejecute
 ```bash
 cd ./backend
 docker-compose exec laravel.test composer require fakerphp/faker
+```
+Debe responder a las consultas que se le realizaran en la  terminal. Para esto use enter 2 veces.
+```bash
 docker-compose exec laravel.test php artisan optimize:clear
 docker-compose exec laravel.test composer dump-autoload
 docker-compose exec laravel.test php artisan migrate
@@ -40,15 +43,14 @@ sudo setenforce 0
 Los comandos indicados anteriormente instalaran los contenedores del proyecto, realizaran las migraciones, los seed, ejecutaran el comando para obtener los datos desde la api solicitada y finalmente los levantara.
 Esto se puede revisar en los archivos bash.
 
-## Opción recomendada
-
+### Consola Laravel desde Docker 
 Si se desea interactuar con la consola del servidor Laravel, se debe ejecutar
 ```bash
 ./attach.sh
 ```
 Esto permitirá que interactué con la interfaz de la consola del contenedor.
 
-## Otras Opciones:
+### Otras Opciones:
 
 Se puede realizar la instalación directa, para lo cual se recomienda revisar la documentación de Laravel, react y PostgreSQL.
 En caso de instalar las dependencias de php y composer, es recomendable iniciar Laravel desde la raíz del repositorio con los siguientes comandos:
