@@ -1,0 +1,6 @@
+[submodule "backend"]
+	path = backend
+	url = https://github.com/OscarVargas97/dolar-api-test.git
+[submodule "frontend"]
+	path = frontend
+	url = git@github.com:OscarVargas97/dolar-front-end.git
