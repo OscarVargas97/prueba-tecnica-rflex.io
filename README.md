@@ -7,11 +7,11 @@ frontend: http://localhost:3000
 ## Instalación
 
 
-Instrucciones paso a paso sobre cómo instalar el proyecto. Por ejemplo:
+Ejecute los siguientes comandos:
 
 ```bash
 git clone https://github.com/OscarVargas97/prueba-tecnica-rflex.io.git
-cd prueba-tecnica-rflex
+cd prueba-tecnica-rflex.io
 ./install.sh
 ```
 Una vez termine este comando, ejecute
